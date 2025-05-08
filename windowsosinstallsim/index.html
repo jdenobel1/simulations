@@ -1,0 +1,156 @@
+<!-----------------------------------------------------------------------
+
+Click on See HTML in new window.
+
+Follow the instructions in the simulation.
+
+------------------------------------------------------------------------>
+<head>
+    <title>OS Installation</title><body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+
+</head>
+
+<div class="window" id="window">
+    <div class="ui-titlebar">
+    	<!--<div class="ui-titleicon"></div>-->
+    	<div class="ui-titletext">Windows Setup</div>
+    	<div class="ui-titlecontrols">
+    		<button class="ui-btn minimize">
+    			<svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
+    		</button><button class="ui-btn maximize">
+    			<svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+    		</button><button class="ui-btn close">
+    			<svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
+    		</button>
+    	</div>
+    </div>
+    <div class="content">
+    <img class="logo" src="https://codehs.com/uploads/238ecbaaf3d8e5c9a2f78b9f14a1598d">
+    <div id="content1">
+        Language to install: 
+        <select>
+            <option>English</option>
+            <option>Español</option>
+            <option>Français</option>
+        </select>
+        <br>
+        Time and currency format:      
+        <select>
+            <option>English</option>
+            <option>Español</option>
+            <option>Français</option>
+        </select>
+        <br><br>
+        Enter your preferences and click "Next" to continue.
+        <br>
+        <button onclick="content2()">Next</submit>
+    </div>
+        <div id="content2">
+        <h3>Activate Windows</h3>
+        If this is the first time you're installing Windows on this PC
+        (or if you're installing a different edition), you need to enter a valid
+        Windows product key. Your product key should be in the confirmation
+        email you received after buying a digital copy of Windows or on
+        a label inside the box that Windows came in.<br><br>
+        The product key looks like this: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX<br><br>
+        If you're reinstalling Windows, select I don't have a product key.
+        Your copy of Windows will be automatically activated later.<br><br>
+        <input type="text" placeholder="Type in anything to move on"><br><br>
+        <button onclick="content3()">Next</submit>
+    </div>
+    <div id="content3">
+    <h3>Which type of installation do you want?</h3>
+    <div class="option" onclick="content4()"><strong>Upgrade: Install Windows and keep files, settings, and applications</strong><br><br>
+    </div>
+    <div class="option" onclick="content4()"><strong>Custom: Install Windows only (advanced)</strong><br><br>
+    Your files, settings and applications are NOT moved with this option. 
+    We recommend backing up your files before you continue.
+    </div>
+    </div>
+    <div id="content4">
+        <h3>Where do you want to install Windows?</h3>
+        <table>
+            <thead>
+                <tr>
+                <th> </th>
+                <th>Name</th>
+                <th>Total size</th>
+                <th>Free space</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr class="option" onclick="play()">
+            <td>
+            <img id="drive" src="https://codehs.com/uploads/00cfa814b0612720ac3901eae97fba26">
+            </td>
+            <td>Hard Drive</td>
+            <td>32.0 GB</td>
+            <td>32.0 GB</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+</div>
+    <section class="format" hidden>
+  <div>
+    <h1>Formatting drives</h1>
+    <div class="load">
+      <div></div>
+    </div>
+  </div>
+</section>
+<section class="install" hidden>
+  <h1>Installing Windows 10</h1>
+  <h2>Your PC will restart several times. 
+      Sit back and relax.<br>Don't worry - this is fake :)</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="130" 
+                stroke="#888" stroke-width="5" 
+                fill="transparent" class="fade-in-out"/>
+        <circle cx="50" cy="150" r="130" 
+                stroke="#0087E5" stroke-width="5" 
+                fill="transparent"
+                transform="rotate(-90 100 100)"
+                stroke-dasharray="820" 
+                stroke-dashoffset="820"
+                id="svgLoaderCircle" />
+        <text x="150" y="150" id="svgPercentageText"
+              dominant-baseline="mathematical"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              fromtime="0"
+              totime="100"
+              fill="white" font-size="80">0%</text>
+      </svg>
+  <footer>
+    <ul>
+      <li class="copyFiles">Copying files 
+        <span class="percent" 
+              fromtime="0" 
+              totime="25">
+        </span>
+      </li>
+      <li class="installOS">Installing features and drivers
+        <span class="percent" 
+              fromtime="26" 
+              totime="75">
+        </span>
+      </li>
+      <li class="config">Configuring setting
+        <span class="percent" 
+              fromtime="76" 
+              totime="100">
+        </span>
+      </li>
+    </ul>
+  </footer>
+</section>
+
+
+<script type="text/javascript" src="script.js"></script>

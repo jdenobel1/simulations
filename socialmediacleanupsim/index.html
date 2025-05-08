@@ -1,0 +1,197 @@
+<!-----------------------------------------------------------------------
+
+Click on Open to see in a new window.
+
+Play around with the simulation. Consider the questions asked in the 
+activity description.
+
+------------------------------------------------------------------------>
+
+<head>
+    <title>Digital Footprint</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Digital Footprint</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:400px">
+                    <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button">Johnny Rockets posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button">Ariana likes your post</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                <img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+<!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h4 class="w3-center">My Profile</h4>
+                        <p class="w3-center">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
+                        </p>
+                        <hr>
+                        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Student at CodeHS</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> San Francisco, CA</p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 2004</p>
+                    </div>
+                </div>
+                <br>
+      
+        <!-- Sidebar -->
+        <div class="w3-card w3-round">
+            <div class="w3-white">
+                <!-- Groups -->
+                <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+                <div id="Demo1" class="w3-hide w3-container">
+                    <p>That Sk8te Life</p>
+                    <p>AP Calc Answer Keys</p>
+                    <p>Burn Book</p>
+                </div>
+                <!-- Events -->
+                <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+                <div id="Demo2" class="w3-hide w3-container">
+                    <p>Senior Cut Day</p>
+                    <p>Honor Society Potluck</p>
+                </div>
+                <!-- Photos -->
+                <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+                <div id="Demo3" class="w3-hide w3-container">
+                    <div class="w3-row-padding">
+                    <br>
+                        <div class="w3-half">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MjyMntm4JJEYPP2OQgxQWac2hkli42mEJKu-1iCuZk5jKy_NZA" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://images.unsplash.com/photo-1501238295340-c810d3c156d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Skater_Girl_-_Park_Spoor_Noord_%282967515870%29.jpg/1024px-Skater_Girl_-_Park_Spoor_Noord_%282967515870%29.jpg" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://live.staticflickr.com/8151/7658261288_9673fa20eb_b.jpg" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://images.unsplash.com/photo-1532452119098-a3650b3c46d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://images.pexels.com/photos/2380079/pexels-photo-2380079.jpeg?cs=srgb&dl=4k-wallpaper-beautiful-girl-cool-wallpaper-2380079.jpg&fm=jpg" style="width:100%" class="w3-margin-bottom">
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <br>
+      
+        <!-- Interests --> 
+        <div class="w3-card w3-round w3-white w3-hide-small">
+            <div class="w3-container">
+                <p>Interests</p>
+                <p>
+                <span class="w3-tag w3-small w3-theme-d5">Friends</span>
+                <span class="w3-tag w3-small w3-theme-d4">CodeHS</span>
+                <span class="w3-tag w3-small w3-theme-d3">Skateboarding</span>
+                <span class="w3-tag w3-small w3-theme-d2">Parties</span>
+                <span class="w3-tag w3-small w3-theme-d1">Beach</span>
+                <span class="w3-tag w3-small w3-theme">Gaming</span>
+                <span class="w3-tag w3-small w3-theme-l1">Events</span>
+                <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                <span class="w3-tag w3-small w3-theme-l3">Sports</span>
+                <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                <span class="w3-tag w3-small w3-theme-l5">Photography</span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    
+        <!-- Middle Column -->
+        <div class="w3-col m7">
+    
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            
+                            <!-- Write a post -->
+                            <h6 class="w3-opacity">Write a post</h6>
+                            <input type="text" id="text1" class="w3-border w3-padding">
+                            </input>
+                            <button onclick="add_element_to_array();" type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Result"></div> 
+        
+        <!-- Feed -->
+        <div id="-2" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>Ariana Rodriguez<button href="#" class="w3-right" onclick="deletePost(-2)"><i class="fa fa-trash"></i></button></h4>
+            <hr class="w3-clear">
+            <p>You are the best study partner ever! Let's meet at the library again soon! <a style="color:#0645AD">#apcalcwillnotbeatus</a></p>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+            <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        </div>  
+        
+        <div id="-1" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <img src="https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>Johnny Rockets<button href="#" class="w3-right" onclick="deletePost(-1)"><i class="fa fa-trash"></i></button></h4>
+            <hr class="w3-clear">
+            <p>Hey you! That was the craziest party yesterday! Check out the pic I got of you! <a style="color:#0645AD">#partyanimal</a></p>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="https://images.unsplash.com/photo-1517457133997-cca417e4a561?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                    <img src="https://images.unsplash.com/photo-1466378284817-a6b7fd50cc68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%" alt="Nature" class="w3-margin-bottom">
+                </div>
+            </div>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+            <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        </div>
+
+        <div id="-3" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <img src="https://images.unsplash.com/photo-1558898479-33c0057a5d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>Angie Jane<button href="#" class="w3-right" onclick="deletePost(-3)"><i class="fa fa-trash"></i></button></h4>
+            <hr class="w3-clear">
+            <p>So glad we decided to go to the beach instead of 4th period!!</p>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <img src="https://images.unsplash.com/photo-1517285976756-6447388e64f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:30%" class="w3-margin-bottom">
+                </div>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+            <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        </div> 
+        
+        <div id="-4" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>You<button href="#" class="w3-right" onclick="deletePost(-4)"><i class="fa fa-trash"></i></button></h4>
+            <hr class="w3-clear">
+            <p><a style="color:#0645AD">@ariannarodriguez</a> I definitely wouldn't have made it through math class if you didn't sit right next to me for the tests!!

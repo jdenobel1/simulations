@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My IP Address</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This you?</h1>
+    <h2 id="ip">Hold on just a sec</h2>
+    <script>
+      fetch("https://api64.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+          let ipAddress = data.ip;
+          document.getElementById("ip").innerText = ipAddress;
+        })
+        .catch((error) => console.error(error));
+    </script>
+  </body>
+</html>

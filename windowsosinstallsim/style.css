@@ -1,0 +1,258 @@
+table {
+    border:solid black 2px;
+    width:60%;
+}
+
+th {
+    background-color:lightGray;
+}
+
+table, td, th {
+    margin:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#drive {
+    height:50px;
+}
+
+.option {
+    padding:5px;
+}
+
+.option:hover{
+    border:solid black 1px;
+    background-color:#add8e6;
+}    
+input {
+    height:40px;
+    width:600px;
+    border:solid gray 2px;
+}
+button {
+    margin:5px;
+    height:25px;
+    font-size:18px;
+    float: right;
+}
+
+
+select{
+    margin:5px;
+    height:25px;
+    font-size:18px;
+    
+}
+.logo {
+    height:40%;
+    display:block;
+    margin:auto
+}    
+
+.window{
+    border: solid black 2px;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.ui-titlebar {
+	display: flex;
+	width: 100%;
+	height: 32px;
+	background: #0072c6;
+	user-select: none;
+	cursor: default;
+} 
+.ui-titleicon {
+	flex-grow: 1;
+	max-width: 32px;
+	max-height: 32px;
+}
+.ui-titletext {
+	flex-grow: 2;
+	max-height: 32px;
+	width: auto;
+	font: 12px/32px "Segoe UI", Arial, sans-serif;
+	color: #fff;
+	text-indent: 10px;
+	font-size:18px;
+}
+
+.content {
+	width: auto;
+	font: 12px/32px "Segoe UI", Arial, sans-serif;
+	color: black;
+	margin: 10px;
+	font-size:18px;
+	
+}
+
+#content1 {
+	display:block;
+}
+
+#content2 {
+    display:none;
+}
+
+#content3 {
+    display:none;
+}
+
+#content4 {
+    display:none;
+}
+
+#content5 {
+    display:none;
+}
+
+.ui-titlecontrols {
+	max-width: 144px;
+	max-height: 32px;
+	flex-grow: 1;
+}
+.ui-btn {
+	margin: 0;
+	width: 48px;
+	height:32px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.ui-btn:hover {
+	background: rgba(255,255,255,.1);
+}
+.ui-btn.close:hover {
+	background: #e81123;
+}
+.ui-btn svg path, 
+.ui-btn svg rect, 
+.ui-btn svg polygon {
+	fill: #fff;
+}
+.ui-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font: 12px/32px "Segoe UI", Arial, sans-serif;
+  font-size:18px;
+}
+
+section > div {
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+
+.revert {
+  left: 50px;
+  right: auto;
+}
+
+.load {
+  height: 2px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.load div {
+  height: 2px;
+  width: 0;
+  background: #fff;
+}
+
+.install {
+  /* display: flex; */
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+}
+.install h1 {
+  font-size: 50px;
+  margin: 60px 0 20px;
+}
+.install h2 {
+  flex: 2;
+  color: #888;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+.install svg {
+  display: flex;
+  flex: 50;
+  width: 50%;
+  max-width: 350px;
+}
+
+.install footer {
+  display: flex;
+  flex: 2;
+  max-width: 700px;
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.install footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+.install footer ul li {
+  display: flex;
+  color: #999;
+  font-size: 12px;
+}
+.install footer ul li.active {
+  color: #fff;
+}
+footer ul li .percent {
+  margin-left: 3px;
+}
+.install .done {
+  color: #0087E5;
+}
