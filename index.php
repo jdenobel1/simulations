@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>deNobel's Simulations</title>
+	</head>
+	<body>
+		<p>Detect My OS: <a href="https://sims.denobelden.org/detectmyossim">Detect My OS</a></p>
+		<p>Multiauth: <a href="https://sims.denobelden.org/multiauthsim">MultiAuth</a></p>
+		<p>Phishing: <a href="https://sims.denobelden.org/phishingsim">Phishing</a></p>
+		<p>Social Media Cleanup: <a href="https://sims.denobelden.org/socialmediacleanupsim">Social Media Cleanup</a></p>
+		<p>Tracking: <a href="https://sims.denobelden.org/trackingsim">Tracking You</a></p>
+		<p>Install Windows: <a href="https://sims.denobelden.org/windowsosinstallsim">Installing Windows</a></p>
+		<p>Registeration Window Example: <a href="https://sims.denobelden.org/login/registeration.html"> Registeration Example</a></p>
+		<p>Login Window Example: <a href="https://sims.denobelden.org/login/index.html"> Login Example</a></p>
+	</body>
+</html>
